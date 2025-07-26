@@ -14,11 +14,12 @@ colors = [Fore.BLUE, Fore.CYAN, Fore.GREEN, Fore.RED, Fore.MAGENTA, Fore.YELLOW]
 print("Twitch chat simulator pre-release by Yar_developer")
 streamername = input("Введите имя стримера: ")
 MESSAGES.streamername = streamername
+EVENTS.streamername = streamername
 print(Fore.GREEN + f"{streamername} начал свой стрим!")
 
 while True:
-    MESSAGES.streamername = streamername
     MESSAGES.reload_list()
+    EVENTS.reload_list()
     if randint(0, 100) == 50:
         print(Fore.GREEN + "======================================================")
         print()
