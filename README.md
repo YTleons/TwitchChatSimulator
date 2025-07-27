@@ -1,8 +1,11 @@
-# TwitchChatSimulator
+# Twitch Chat Simulator
 This is simple twitch chat simulator with customizable nicknames and messages
 
 ### What is this?
 This is a fan project where you can create a simulation of a twitch chat
+
+### How i can improve project?
+You can fork the repository, improve some features, and make a pull request.
 
 ### Images
 <img width="1881" height="992" alt="image" src="https://github.com/user-attachments/assets/fccdcc45-ac36-4d19-b09e-e6c715cc2d21" />
