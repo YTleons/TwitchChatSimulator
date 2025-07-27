@@ -18,9 +18,11 @@ EVENTS.streamername = streamername
 print(Fore.GREEN + f"{streamername} начал свой стрим!")
 
 while True:
+    MESSAGES.streamername = streamername
+    EVENTS.streamername = streamername
     MESSAGES.reload_list()
     EVENTS.reload_list()
-    if randint(0, 100) == 50:
+    if randint(0, 70) == 50:
         print(Fore.GREEN + "======================================================")
         print()
         print()
@@ -31,6 +33,6 @@ while True:
         print()
         print(Fore.GREEN + "======================================================")
     else:
-        sleep(randint(500, 1000) / 1000)
+        sleep(randint(500, 3000) / 1000)
         YEAR.a = randint(2000, 2021)
-        print(colors[randint(0, 5)] + PREFIXES.a[randint(0, len(PREFIXES.a) - 1)] + NICKNAMES.a[randint(0, len(NICKNAMES.a) - 1)] + SUFFIXES.a[randint(0, len(SUFFIXES.a) - 1)] + ": " + MESSAGES.a[randint(0, len(MESSAGES.a) - 1)])
+        print("\n" + colors[randint(0, 5)] + PREFIXES.a[randint(0, len(PREFIXES.a) - 1)] + NICKNAMES.a[randint(0, len(NICKNAMES.a) - 1)] + SUFFIXES.a[randint(0, len(SUFFIXES.a) - 1)] + ": " + MESSAGES.a[randint(0, len(MESSAGES.a) - 1)])
